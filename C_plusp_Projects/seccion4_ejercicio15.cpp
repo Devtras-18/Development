@@ -48,6 +48,7 @@ int main()
 
 	cout << "\nFelicidades has ingresado el numero generado " << get_number << endl;
 	cout << "\nNumero de intentos hasta lograr exito: "<< _tryouts << endl;
+	cout << "Test line " << endl;
 
 
     return 0;
