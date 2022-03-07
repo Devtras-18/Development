@@ -3,34 +3,44 @@
 #include<iostream>
         o mayor al numero aleatorio, asi hasta que lo adivine y por ultimo mostrarle el numero de intentos que le llevo.*/
 #include<iostream>
-#include<fstream>
-#include<time.h>
 #include<stdio.h>
 #include<stdlib.h>
-#include<conio.h>
+#include<string>
+#include <cstddef>
 
 using namespace std;
+//enum definicion [_Positivo = 1, _Negative = 0];
 
 
 int main()
 {
-    enum definicion [_Positivo = 1, _Negative = 0];
+
     int _tryouts = 0;
     int _rand_values;
+    string _response;
 
 
         cout << "Piense un numero que se encuentra en el rango del 1 - 100" << endl;
-        getch;
+        //getch();
 
     Startagain:
-
     _rand_values = 1 + rand() % (100-1);
 
         cout << "Did you get the correct number?\n\r"<< _rand_values << " \n\rPlease enter Yes [Y] or No [N]: " << endl;
+        getline(std::cin,_response);
 
-        if()
 
-    goto Startagain;
+        if(_response.find_first_not_of("Y"))
+        {
+            _tryouts+=1;
+
+        }
+        else
+        {
+           goto Startagain;
+        }
+
+
 
     return 0;
 }

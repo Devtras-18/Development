@@ -24,6 +24,7 @@ for(_serie_interacion = 0;_serie_interacion <=n_series ;_serie_interacion++)
         _suma_Act = n_0 + n_1;
         val_ant = n_1;  /*Asignacion de valor anterior de sumatoria*/
         val_act = _suma_Act; /*Asignacion de valor inmediato actual de sumatoria*/
+	int Val_set_new = val_act;
 
 
     cout << "Sumatoria de serie " << _suma_Act << " En posicion: " << _serie_interacion << endl;
