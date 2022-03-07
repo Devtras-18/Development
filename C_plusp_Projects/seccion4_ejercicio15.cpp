@@ -29,22 +29,17 @@ int main()
 
 		cout << "Ingrese un numero: "; cin >> get_number;
 
-		if(_rand_values>get_number)
+		if(get_number>_rand_values)
 		{
 			cout << "\nDigite un numero menor\n";
 		}
-		if(_rand_values<get_number)
-		{ 
-
+		if(get_number<_rand_values)
+		{
 			cout << "\nDigite un numero mayor\n";
-
 		}
 
 		_tryouts++;
-
-
-
-	}while(get_number != _rand_values);
+      }while(get_number != _rand_values);
 
 	cout << "\nFelicidades has ingresado el numero generado " << get_number << endl;
 	cout << "\nNumero de intentos hasta lograr exito: "<< _tryouts << endl;
