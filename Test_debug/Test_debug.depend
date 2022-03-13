@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1639083677 source:c:\users\sertrejo\documents\codeblocks_practice\cplusplus_practice_course\test_debug\main.cpp
+	<iostream>
+	<string>
+	<math.h>
+
